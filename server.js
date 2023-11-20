@@ -30,9 +30,9 @@ app.use("/api/v1/product", productRoutes);
 //   res.sendFile(path.join(__dirname, './client/build/index.html'))
 // });
 
-app.get("/", (req,res){
-  res.send("<h1>Welcome to BidHub</h1>")
-});
+// app.get("/", (req,res){
+//   res.send("<h1>Welcome to BidHub</h1>")
+// });
 
 const PORT = process.env.PORT || 3005;
 
