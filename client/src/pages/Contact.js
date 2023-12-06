@@ -11,7 +11,7 @@ function Contact() {
     <>
     <Layout title={"Contact Us - BidHub"}>
       <h2 className='titlee pt-3 my-4 text-center'>
-          Know The Creators.....
+          Know The Creators...
       </h2>
       <div className='flexx mx-5'>
         <div className="card mx-4" styles="width: 18rem;">
