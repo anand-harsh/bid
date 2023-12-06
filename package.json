@@ -1,6 +1,6 @@
 {
   "name": "bidhub",
-  "proxy": "http://localhost:3005",
+  "proxy": "https://bidhub-website.onrender.com",
   "version": "1.0.0",
   "description": "bithub rest api",
   "main": "server.js",

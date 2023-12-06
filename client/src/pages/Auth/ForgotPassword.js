@@ -17,7 +17,7 @@ const ForgotPasssword = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3005/api/v1/auth/forgot-password",
+        "https://bidhub-website.onrender.com/api/v1/auth/forgot-password",
         {
           email,
           newPassword,

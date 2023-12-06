@@ -73,7 +73,7 @@ const CartPage = () => {
               <div className="row mb-2 p-3 card flex-row">
                 <div className="col-md-5">
                   <img
-                    src={`http://localhost:3005/api/v1/product/product-photo/${p._id}`}
+                    src={`https://bidhub-website.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                     width="100px"
@@ -104,7 +104,7 @@ const CartPage = () => {
               <div className="row mb-2 p-3 card flex-row">
                 <div className="col-md-4">
                   <img
-                    src={`http://localhost:3005/api/v1/product/product-photo/${p._id}`}
+                    src={`https://bidhub-website.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                     width="100px"

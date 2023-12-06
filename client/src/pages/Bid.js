@@ -22,7 +22,7 @@ const Bid = () => {
   const getSingleProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:3005/api/v1/product/get-product/${params.slug}`
+        `https://bidhub-website.onrender.com/api/v1/product/get-product/${params.slug}`
       );
       setName(data.product.name);
       setId(data.product._id);
@@ -43,7 +43,7 @@ const Bid = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3005/api/v1/category/get-category"
+        "https://bidhub-website.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -68,7 +68,7 @@ const Bid = () => {
       productData.append("category", category);
       photo && productData.append("photo", photo);
       const { data } = axios.put(
-        `http://localhost:3005/api/v1/product/bid-product/${id}`,
+        `https://bidhub-website.onrender.com/api/v1/product/bid-product/${id}`,
         productData
       );
       if (data?.success) {
@@ -136,7 +136,7 @@ const Bid = () => {
                 ) : (
                   <div className="text-center">
                     <img
-                      src={`http://localhost:3005/api/v1/product/product-photo/${id}`}
+                      src={`https://bidhub-website.onrender.com/api/v1/product/product-photo/${id}`}
                       alt="product_photo"
                       height={"200px"}
                       className="img img-responsive"

@@ -23,7 +23,7 @@ const CreateProduct = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3005/api/v1/category/get-category"
+        "https://bidhub-website.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -49,7 +49,7 @@ const CreateProduct = () => {
       productData.append("category", category);
       productData.append("photo", photo);
       const { data } = axios.post(
-        "http://localhost:3005/api/v1/product/create-product",
+        "https://bidhub-website.onrender.com/api/v1/product/create-product",
         productData
       );
       if (data?.success) {

@@ -8,7 +8,7 @@ export default function useCategory() {
   const getCategories = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3005/api/v1/category/get-category"
+        "https://bidhub-website.onrender.com/api/v1/category/get-category"
       );
       setCategories(data?.category);
     } catch (error) {
