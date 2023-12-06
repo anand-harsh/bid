@@ -17,7 +17,7 @@ const Products = () => {
   const getAllProducts = async () => {
     try {
       const { data } = await axios.get(
-        "https://bidhub-website.onrender.com/api/v1/product/get-product"
+        "https://mern-web-edxg.onrender.com/api/v1/product/get-product"
       );
       setProducts(data.products);
     } catch (error) {
@@ -36,7 +36,7 @@ const Products = () => {
   const getTotal = async () => {
     try {
       const { data } = await axios.get(
-        "https://bidhub-website.onrender.com/api/v1/product/product-count"
+        "https://mern-web-edxg.onrender.com/api/v1/product/product-count"
       );
       console.log(total)
       setTotal(data?.total);
@@ -54,7 +54,7 @@ const Products = () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        `https://bidhub-website.onrender.com/api/v1/product/product-list/${page}`
+        `https://mern-web-edxg.onrender.com/api/v1/product/product-list/${page}`
       );
       setLoading(false);
       setProducts([...products, ...data?.products]);
@@ -81,7 +81,7 @@ const Products = () => {
               >
                 <div className="card mx-4 my-3" style={{ width: "18rem" }}>  
                   <img
-                    src={`https://bidhub-website.onrender.com/api/v1/product/product-photo/${p._id}`}
+                    src={`https://mern-web-edxg.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}
                   />

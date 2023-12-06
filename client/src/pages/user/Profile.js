@@ -28,7 +28,7 @@ const Profile = () => {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        "https://bidhub-website.onrender.com/api/v1/auth/profile",
+        "https://mern-web-edxg.onrender.com/api/v1/auth/profile",
         {
           name,
           email,

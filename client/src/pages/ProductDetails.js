@@ -41,7 +41,7 @@ const ProductDetails = () => {
   const getSingleProduct = async () => {
     try {
       const { data } = await axios.get(
-        `https://bidhub-website.onrender.com/api/v1/product/get-product/${params.slug}`
+        `https://mern-web-edxg.onrender.com/api/v1/product/get-product/${params.slug}`
       );
       setName(data.product.name);
       setId(data.product._id);
@@ -62,7 +62,7 @@ const ProductDetails = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "https://bidhub-website.onrender.com/api/v1/category/get-category"
+        "https://mern-web-edxg.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -79,7 +79,7 @@ const ProductDetails = () => {
   const getSingleWinner = async () => {
     try {
       const { data } = await axios.get(
-        `https://bidhub-website.onrender.com/api/v1/product/get-product/${params.slug}`
+        `https://mern-web-edxg.onrender.com/api/v1/product/get-product/${params.slug}`
       );
       setWinner(data.product.winner);
     } catch (error) {
@@ -106,7 +106,7 @@ const ProductDetails = () => {
       productData.append("winner", winner);
       photo && productData.append("photo", photo);
       const { data } = axios.put(
-        `https://bidhub-website.onrender.com/api/v1/product/bid-product/${id}`,
+        `https://mern-web-edxg.onrender.com/api/v1/product/bid-product/${id}`,
         productData
       );
       if (data?.success) {
@@ -174,7 +174,7 @@ const ProductDetails = () => {
                 ) : (
                   <div className="text-center">
                     <img
-                      src={`https://bidhub-website.onrender.com/api/v1/product/product-photo/${id}`}
+                      src={`https://mern-web-edxg.onrender.com/api/v1/product/product-photo/${id}`}
                       alt="product_photo"
                       height={"200px"}
                       className="img img-responsive"

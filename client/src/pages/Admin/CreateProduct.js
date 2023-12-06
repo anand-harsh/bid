@@ -23,7 +23,7 @@ const CreateProduct = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "https://bidhub-website.onrender.com/api/v1/category/get-category"
+        "https://mern-web-edxg.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -49,7 +49,7 @@ const CreateProduct = () => {
       productData.append("category", category);
       productData.append("photo", photo);
       const { data } = axios.post(
-        "https://bidhub-website.onrender.com/api/v1/product/create-product",
+        "https://mern-web-edxg.onrender.com/api/v1/product/create-product",
         productData
       );
       if (data?.success) {
